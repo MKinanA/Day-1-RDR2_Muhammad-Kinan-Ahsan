@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#101410" />
+    <meta name="description" content="Expectik — a hands-on learning space for AI, prompt engineering, and Git." />
+    <title>Expectik — Learn by building</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" aria-label="Main navigation">
+        <a class="brand" href="#dashboard" aria-label="Expectik home">
+          <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+          <span>expectik<span class="brand-period">.</span></span>
+        </a>
+        <div class="workspace-switcher">
+          <div class="workspace-avatar">E</div>
+          <div class="workspace-copy"><strong>My workspace</strong><span>Personal plan</span></div>
+          <span class="chevron" aria-hidden="true">⌄</span>
+        </div>
+        <p class="nav-label">WORKSPACE</p>
+        <nav class="primary-nav">
+          <button class="nav-item active" data-view="dashboard"><span class="nav-icon">◫</span> Overview</button>
+          <button class="nav-item" data-view="paths"><span class="nav-icon">▤</span> Learning paths <span class="nav-count">3</span></button>
+          <button class="nav-item" data-view="prompt-lab"><span class="nav-icon">✳</span> Prompt lab <span class="nav-dot"></span></button>
+          <button class="nav-item" data-view="git-playground"><span class="nav-icon">⑂</span> Git playground</button>
+          <button class="nav-item" data-view="portfolio"><span class="nav-icon">▧</span> My portfolio</button>
+        </nav>
+        <div class="sidebar-bottom">
+          <div class="streak-card">
+            <div class="streak-top"><span class="streak-flame">✦</span><span class="streak-days">4 day streak</span><span class="streak-spark">↗</span></div>
+            <p>You’re building a great habit. Keep it going!</p>
+            <div class="week-dots" aria-label="Activity this week"><span class="done">M</span><span class="done">T</span><span class="done">W</span><span class="today">T</span><span>F</span><span>S</span><span>S</span></div>
+          </div>
+          <button class="help-link" data-action="help"><span>?</span> Help & resources <span class="external">↗</span></button>
+          <button class="profile-button" data-action="profile"><span class="profile-avatar">MK</span><span class="profile-copy"><strong>Mika K.</strong><small>Learning explorer</small></span><span class="more">···</span></button>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumb"><span>Workspace</span><span class="crumb-slash">/</span><strong id="breadcrumb-current">Overview</strong></div>
+          <div class="topbar-actions">
+            <label class="search-box"><span aria-hidden="true">⌕</span><input id="global-search" type="search" placeholder="Search anything..." aria-label="Search learning paths" /><kbd>⌘ K</kbd></label>
+            <button class="icon-button notification-button" aria-label="Notifications" data-action="notifications">♧<i></i></button>
+            <button class="top-avatar" aria-label="Open profile" data-action="profile">MK</button>
+          </div>
+        </header>
+        <section id="app-view" class="content-area" aria-live="polite"></section>
+        <footer class="app-footer"><span>Made for curious minds.</span><span>Expectik <b>·</b> Learn by building</span></footer>
+      </main>
+    </div>
+    <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+    <dialog id="app-dialog" class="app-dialog"><form method="dialog"><button class="dialog-close" aria-label="Close dialog">×</button></form><div id="dialog-content"></div></dialog>
+  </body>
+</html>

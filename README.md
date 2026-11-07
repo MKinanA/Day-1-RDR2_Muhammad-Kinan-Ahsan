@@ -1,19 +1,6 @@
 # Expectik
+Nama: Muhammad Kinan Ahsan
 
-## Workshop AI & Git
-- AI untuk pengembangan, git untuk manajemen perubahan dan kolaborasi.
-- Prompt engineering: cara merancang instruksi agar AI paham yang kita inginkan.
-  - Unsur-unsur dalam instruksi:
-    - Role: Kita mau AInya sebagai apa.
-    - Task: Apa yang kita mau dari AInya.
-    - Context: Konteks supaya hasil lebih sesuai.
-    - Format: Mau hasilnya seperti apa, dengan format apa.
-  - Keuntungan prompt engineering:
-    - Meningkatkan performa AI model.
-    - Mengurangi bias dan respon yang offensive.
-    - Meningkatkan control dan predictability.
-    - Memberikan pengalaman yang lebih baik.
-- Git: version control system.
-- Git dibuat oleh Linus Torvalds.
-- Working directory, staging area, git repository.
-- Github, Gitlab, dll adalah cloud storage untuk menyimpan git repo.
+---
+
+Repositori ini berisi catatan Workshop AI & Git dalam acara TIK Mengajar untuk mahasiswa baru 2026, untuk merangkum poin-poin yang dibahas di workshop.
